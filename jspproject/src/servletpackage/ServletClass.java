@@ -38,6 +38,7 @@ public class ServletClass extends HttpServlet {
 
 		Part filePart = request.getPart("img");
 		String fileName = extractFileName(filePart);
+		System.out.println("$$$$$$$$$$$$$$$$$$");
 
 		String savePath = "D:\\images" + File.separator + fileName;
 		System.out.println("savepath%%%%%%%" + savePath);
